@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@SchoolBank</title>
+    <style>
+        body {
+            background-color: #ff8c00; /* Dark orange */
+            font-family: monospace;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+        .form-container {
+            margin: 20px auto;
+            width: 50%;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input[type="text"], input[type="password"], input[type="submit"] {
+            font-family: monospace;
+            padding: 10px;
+            margin: 10px;
+            font-size: 1.1em;
+            width: 80%;
+        }
+        input[type="submit"] {
+            background-color: #ff8c00;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .signup-section, .login-section, .teacher-section {
+            margin-top: 30px;
+        }
+        .box {
+            background-color: black;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            width: 50%;
+            margin: 30px auto;
+        }
+        .box h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        input[type="search"] {
+            padding: 10px;
+            width: 80%;
+            margin: 10px;
+            font-size: 1.1em;
+        }
+        p.note {
+            color: yellow;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to @SchoolBank</h1>
+
+    <!-- Sign-up and Login forms for students -->
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <p class="note">Note: Your username should be your name</p>
+        <form action="#" method="post">
+            <input type="text" placeholder="Enter your name (username)" required><br>
+            <input type="password" placeholder="Create a password" required><br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+
+    <div class="form-container login-section">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Username" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <!-- Teacher sign-up and login forms -->
+    <div class="form-container teacher-section">
+        <h2>Teacher Sign Up</h2>
+        <p class="note">Note: Your username should be your name</p>
+        <form action="#" method="post">
+            <input type="text" placeholder="Teacher Username" required><br>
+            <input type="password" placeholder="Create Teacher Password" required><br>
+            <input type="submit" value="Teacher Sign Up">
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2>Teacher Login</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Teacher Username" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <input type="submit" value="Teacher Login">
+        </form>
+    </div>
+
+    <!-- After login for students -->
+    <div class="box">
+        <h2>Your Points</h2>
+        <p>Default Points: 100</p>
+        <p>Monthly Points: +100 (Added Monthly)</p>
+    </div>
+
+    <!-- After login for teachers -->
+    <div class="box">
+        <h2>Teacher's Point Control</h2>
+        <form action="#" method="post">
+            <input type="search" placeholder="Search student's username" required><br>
+            <input type="number" placeholder="Add or deduct points" required><br>
+            <input type="submit" value="Update Points">
+        </form>
+    </div>
+
+</body>
+</html>
